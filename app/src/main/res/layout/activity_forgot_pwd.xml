@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F5F7"
+    tools:context="com.astgo.fenxiao.activity.ForgotPwdActivity">
+
+    <include
+        layout="@layout/title_base"
+        android:id="@+id/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme_white" />
+    
+    <LinearLayout
+        android:id="@+id/ll_inputs"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@color/theme_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_title"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/theme_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:hint="@string/input_register_mobile"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#7C8790"
+            android:layout_marginLeft="30dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/et_bottom_line_bg"
+            android:inputType="phone"
+            android:maxLines="1" />
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:visibility="visible"
+                android:id="@+id/et_code"
+                android:hint="@string/input_code"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="#7C8790"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/et_bottom_line_bg"
+                android:inputType="phone"
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/btn_get_code"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="@string/get_code"
+                android:textColor="@color/theme_white"
+                android:background="@drawable/shap_button"
+                />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:hint="@string/input_reset_pwd"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#7C8790"
+            android:layout_marginLeft="30dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/et_bottom_line_bg"
+            android:inputType="numberPassword"
+            android:maxLines="1"  />
+
+        <EditText
+            android:id="@+id/et_new_pwd_again"
+            android:hint="@string/input_reset_pwd_again"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="#7C8790"
+            android:layout_marginLeft="30dp"
+            android:paddingBottom="20dp"
+            android:background="@null"
+            android:inputType="numberPassword"
+            android:maxLines="1"  />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_below="@id/ll_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/confirm_button_selector"
+        android:padding="10dp"
+        android:text="@string/register_btn_confirm_1"
+        android:textColor="@color/theme_white"
+        android:textSize="16sp" />
+</RelativeLayout>

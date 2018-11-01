@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leef.astgo.app.activity.register.RegisterActivity">
+
+    <!--<com.leef.astgo.app.view.BaseTitle-->
+    <!--android:id="@+id/base_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/theme_color" />-->
+
+    <include
+        layout="@layout/title_base"
+        android:id="@+id/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_color" />
+
+    <RadioGroup
+        android:visibility="gone"
+        android:id="@+id/rg_reg_method"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/theme_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_left"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/register_free"
+            android:visibility="visible"
+            android:textColor="@drawable/radio_button_txt_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_right"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/register_card"
+            android:checked="true"
+            android:textColor="@drawable/radio_button_txt_selector" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/reg_fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

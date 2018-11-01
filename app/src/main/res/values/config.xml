@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- UI Toast距底部高度 dp -->
+    <integer name="config_toast_y_offset">50</integer>
+    
+    <integer name="loading_frame_interval">200</integer>
+    
+    <integer name="animation_default_duration">200</integer>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expand_child_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/expand_child_tv"
+        android:layout_marginLeft="50dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/theme_black"
+        android:textSize="15sp"
+        android:text="1111111"/>
+    <ImageView
+        android:id="@+id/expand_child_iv"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:padding="6dp"
+        android:src="@drawable/contacts_title_menu_selector"/>
+
+</LinearLayout>

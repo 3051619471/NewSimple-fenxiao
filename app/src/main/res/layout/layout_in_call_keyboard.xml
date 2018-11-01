@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/keyboard_in_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/keyboard_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:singleLine="true"
+            android:textColor="@color/theme_white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/keyboard_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/DigitOneButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_01" />
+
+            <ImageButton
+                android:id="@+id/DigitTwoButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_02" />
+
+            <ImageButton
+                android:id="@+id/DigitThreeButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_03" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboard_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/keyboard_layout_1"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/DigitFourButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_04" />
+
+            <ImageButton
+                android:id="@+id/DigitFiveButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_05" />
+
+            <ImageButton
+                android:id="@+id/DigitSixButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_06" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboard_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/keyboard_layout_2"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/DigitSevenButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_07" />
+
+            <ImageButton
+                android:id="@+id/DigitEightButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_08" />
+
+            <ImageButton
+                android:id="@+id/DigitNineButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_09" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboard_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/keyboard_layout_3"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/DigitXhButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_xh_selector" />
+
+            <ImageButton
+                android:id="@+id/DigitZeroButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_00" />
+
+            <ImageButton
+                android:id="@+id/DigitJhButton_in_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/vs_small_keyboard_jh_selector" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

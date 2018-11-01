@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/root">
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/ll_bottom_bar"
+            layout="@layout/bottom_bar"/>
+        <include
+            android:id="@+id/ll_bottom_key_board"
+            layout="@layout/layout_new_keyboard_bottom" />
+    </FrameLayout>
+
+</LinearLayout>

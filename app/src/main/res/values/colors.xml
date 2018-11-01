@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题颜色-->
+    <color name="theme_color">@color/theme_blue</color>
+    <!--标题栏颜色-->
+    <color name="title_color">#ffffffff</color>
+    <!--tab背景颜色-->
+    <color name="bottom_tab_bg">#fff8f8f8</color>
+    <!--tab字体颜色-->
+    <color name="bottom_tab_normal">#ff6f6f6f</color>
+    <color name="bottom_tab_new_normal">#ACACAC</color>
+    <!--tab字体选中颜色-->
+    <color name="bottom_tab_select">@color/theme_blue</color>
+    <color name="bottom_new_tab_select">#FB5911</color>
+    <!--分割线颜色-->
+    <color name="divide_line">#ffb1b1b1</color>
+    <color name="divide_line_transparency">#88b1b1b1</color>
+    <!--主题白-->
+    <color name="theme_white">#ffff</color>
+    <color name="theme_white_dark">#ffe0e0e0</color>
+    <color name="theme_white_details_calls_bg">#fafafa</color>
+    <color name="theme_white_details_bg">#f1f1f1</color>
+    <!--主题绿-->
+    <color name="theme_green">#ff339999</color>
+    <color name="theme_green_dark">#ff336666</color>
+    <!--主题红-->
+    <color name="theme_red">#ffdd2626</color>
+    <color name="new_theme_red">#fe4154</color>
+    <color name="theme_red_dark">#ffdd4343</color>
+    <!--主题灰-->
+    <color name="theme_gray">#ffcccccc</color>
+    <color name="theme_new_gray">#F5F5F5</color>
+    <color name="theme_gray_dark">#ffbbbbbb</color>
+    <color name="theme_gray_transparency">#99bbbbbb</color>
+    <!--主题黑-->
+    <color name="theme_black">#000</color>
+    <color name="theme_black_light">#ff303030</color>
+    <!--主题蓝-->
+    <color name="theme_blue">#ff03a9f5</color>
+    <color name="theme_blue_dark">#ff0298e4</color>
+    <!--默认文字颜色-->
+    <color name="text_color">#7d7d7d</color>
+    <!--圆形透明背景-->
+    <color name="cyclo_bg_transparency_call_head">#8888a29f</color>
+    <color name="cyclo_bg_transparency_call_btn_default">#882b293a</color>
+    <color name="cyclo_bg_transparency_call_btn_yellow">#88cf7d1a</color>
+    <color name="cyclo_bg_transparency_call_btn_red">#888a383e</color>
+    <color name="cyclo_bg_transparency_call_btn_green">#88339763</color>
+
+    <color name="contact_index">#ffc3c3c3</color>
+    <color name="yellow">#ffffff33</color>
+
+    <!--联系人背景颜色-->
+    <color name="contacts_bg_green">#ff689f38</color>
+    <color name="contacts_bg_yellow">#fff67c01</color>
+    <color name="contacts_bg_red">#ffc2185b</color>
+    <color name="contacts_bg_purple">#ff7b1fa2</color>
+    <color name="contacts_bg_blue_dark">#ff455edd</color>
+    <color name="contacts_bg_blue_bright">#ff0091ea</color>
+
+    <color name="itemLowBackground">#d9d9d9</color>
+    <color name="itemBackground">#DD7D7D7D</color>
+    <color name="color_new_them">#FF6C2F</color>
+    <color name="login_bg">#F2F5F7</color>
+
+    <color name="bottom_text_color">#7A7E83</color>
+    <color name="top_banner_bg">#FB5911</color>
+    <color name="line_gray">#F2F2F2</color>
+    <color name="text_blue">#0076FF</color>
+    <color name="text_black">#333333</color>
+
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_laser">@color/text_blue</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="red">#FE4445</color>
+
+</resources>

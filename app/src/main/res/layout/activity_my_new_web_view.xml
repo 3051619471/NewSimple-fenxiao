@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/webview_title_top"
+        layout="@layout/title_new_base"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/mframe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/tv_network"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_white_dark"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/webview_error_hint"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_network_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/webview_error_refresh"
+                    android:textColor="@color/login_bg"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <include
+            android:id="@+id/webview_title_in"
+            layout="@layout/title_base"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

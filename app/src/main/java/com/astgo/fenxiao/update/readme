@@ -1,0 +1,9 @@
+
+ // 别忘了加广播
+
+     <receiver android:name=".update.UpdateAppReceiver"
+            >
+            <intent-filter>
+                <action android:name="teprinciple.update"/>
+            </intent-filter>
+        </receiver>

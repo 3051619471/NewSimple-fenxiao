@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_base" />
+
+    <RelativeLayout
+        android:id="@+id/contacts_details_bg"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/contacts_details_head"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/contacts_head" />
+
+        <LinearLayout
+            android:id="@+id/contacts_details_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/contacts_details_head"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/contacts_details_calls"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/contacts_details_calls"
+                android:textColor="@color/theme_white_dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/contacts_details_info"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/contacts_details_info"
+                android:textColor="@color/theme_white_dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/contacts_details_callrecorder"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/contacts_details_callrecorder"
+                android:textColor="@color/theme_white_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:id="@+id/contacts_details_tab_bar_subScript"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/theme_white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/contacts_details_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

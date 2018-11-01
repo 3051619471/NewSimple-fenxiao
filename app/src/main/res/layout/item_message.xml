@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/login_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/shap_side_circle_gray_bg"
+        android:text=""
+        android:textColor="@color/theme_white"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:background="@color/theme_white"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/theme_black"
+            android:textSize="20sp"
+            />
+        
+        <TextView
+            android:id="@+id/tv_out_content"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:lineSpacingMultiplier="1.4"
+            />
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看详情"
+            android:drawableRight="@mipmap/icon_more"
+            android:drawablePadding="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="15dp"
+            android:textColor="#AA000000"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

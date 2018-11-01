@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/theme_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/recv_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <TextView
+                android:id="@+id/tv_requesting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="请求中..."
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recv_commodity"
+                android:visibility="gone"
+                android:background="@color/theme_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </FrameLayout>
+
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

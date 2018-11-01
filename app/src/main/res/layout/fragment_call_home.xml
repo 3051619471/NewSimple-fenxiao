@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fl_title_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:visibility="gone"
+            layout="@layout/title_base"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_top_call"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/theme_white"
+                android:gravity="center"
+                android:hint="通话记录"
+                android:singleLine="true"
+                android:textColor="@color/theme_color"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp"
+                android:inputType="phone"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:background="@color/theme_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+
+                android:visibility="gone"
+                android:id="@+id/ll_no_data"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/icon_no_data"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无通话记录"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_list"
+                android:scrollbars="vertical"
+                android:background="@color/theme_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/filter_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:background="@color/theme_white"
+            android:visibility="gone"/>
+        <RelativeLayout
+            android:id="@+id/keyboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <include
+                android:id="@+id/layout_new_keyboard"
+                android:layout_alignParentBottom="true"
+                layout="@layout/layout_new_keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <RelativeLayout
+                android:layout_above="@id/layout_new_keyboard"
+                android:id="@+id/rl_view_pager"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                >
+
+                <com.pomelorange.newphonebooks.widget.ViewPagerScrollImage
+                    android:id="@+id/store_image_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+                
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_banner"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="fitXY"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,242 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--app相关-->
+    <string name="app_name">和顺商圈</string>
+    <string name="app_version_name">2.0</string>
+
+    <!--网络-->
+    <string name="string_network_error">网络链接错误，请检查网络设置！</string>
+    <string name="xml_error">XML 错误</string>
+    <string name="net_loading">正在加载...</string>
+    <string name="error_url">暂无服务</string>
+    <!--bottombar底部导航栏-->
+    <string name="bottombar01">拨号</string>
+    <string name="bottombar01_close">收起</string>
+    <string name="bottombar01_open">展开</string>
+    <string name="bottombar02">联系人</string>
+    <string name="bottombar03">更多</string>
+    <string name="bottombar04">商城</string>
+    <!--title-->
+    <string name="title_calls">通话记录</string>
+    <string name="title_contacts">联系人</string>
+    <!--calls_title_menu菜单-->
+    <string name="calls_title_menu_all">全部记录</string>
+    <string name="calls_title_menu_missed">未接来电</string>
+    <string name="calls_title_menu_incoming">呼入号码</string>
+    <string name="calls_title_menu_outgoing">呼出号码</string>
+    <string name="calls_title_menu_unknown">未知号码</string>
+    <string name="calls_title_menu_delete">清除记录</string>
+    <!--contacts_menu菜单-->
+    <string name="contacts_menu_call">拨打电话</string>
+    <string name="contacts_menu_add">保存</string>
+    <string name="contacts_menu_message">发消息</string>
+    <string name="contacts_menu_delete">删除</string>
+    <string name="contacts_menu_edit">编辑</string>
+    <string name="contacts_menu_collect">收藏</string>
+    <string name="contacts_menu_copy">复制号码</string>
+    <!-- 时间戳转换 -->
+    <string name="time_util_now">刚刚</string>
+    <string name="time_util_minutes_ago">分钟前</string>
+    <string name="time_util_hours">小时</string>
+    <string name="time_util_minutes">分钟</string>
+    <string name="time_util_seconds">秒</string>
+    <string name="time_util_min">分</string>
+    <string name="time_util_sec">秒</string>
+    <!--contacts详情-->
+    <string name="contacts_details_calls">通话记录</string>
+    <string name="contacts_details_info">详细信息</string>
+    <string name="contacts_details_callrecorder">通话录音</string>
+    <string name="contacts_details_message">发短信</string>
+    <string name="contacts_details_share">分享号码</string>
+    <string name="unknow_phone_address">未知归属地</string>
+    <string name="contacts_calls_no_data">您已经很久没有和TA联系了～</string>
+    <string name="contacts_recording_empty">通话中可以直接录音</string>
+    <!--dialog提示语-->
+    <string name="TIPS">提示</string>
+    <string name="tips_whether_delete">是否确认删除？</string>
+    <string name="tips_whether_delete_all">是否确认清除所有通话记录？</string>
+    <string name="tips_confirm">确认</string>
+    <string name="tips_cancle">取消</string>
+    <!--calldirect直拨界面-->
+    <string name="call_direct_btn_mute">静音</string>
+    <string name="call_direct_btn_handsfree">免提</string>
+    <string name="call_direct_btn_hold">保持</string>
+    <string name="call_direct_btn_recording">录音</string>
+    <string name="call_direct_btn_callback">回拨</string>
+    <string name="call_direct_btn_hangup">挂断</string>
+    <string name="call_direct_btn_keyboard">键盘</string>
+    <string name="call_direct_state_calling">正在呼叫..</string>
+    <string name="call_direct_state_end">通话结束</string>
+    <!--callback回拨界面-->
+    <string name="call_back_api_ret_0">呼叫成功，请注意接听</string>
+    <string name="call_back_api_ret_1">呼叫失败，请检查网络设置</string>
+    <string name="call_back_api_ret_5">呼叫请求已提交，请稍候重试</string>
+    <!--设置界面-->
+    <string name="setting_title">设置</string>
+    <string name="setting_txt_01">拨打方式</string>
+    <string name="setting_txt_02">声音设置</string>
+    <string name="setting_txt_03">拨号提示</string>
+    <!--<string name="setting_txt_02">来电显示</string>-->
+    <!--<string name="setting_txt_03">本地区号</string>-->
+    <!--<string name="setting_txt_05">修改密码</string>-->
+    <!--<string name="setting_txt_06">无网络拨号</string>-->
+    <string name="myself_account">账号：</string>
+    <string name="setting_exit">退出</string>
+
+    <!--设置详情界面-->
+    <string name="setting01_direct">直拨</string>
+    <string name="setting01_back">回拨</string>
+    <string name="setting02_AJSY">按键声音</string>
+    <string name="setting02_YYTX">语音提醒</string>
+    <string name="setting03_BHTS">拨打提示</string>
+    <!--登陆界面-->
+    <string name="login_account">手机</string>
+    <string name="login_password">密码</string>
+    <string name="login_register">注册</string>
+    <string name="login_sign_in">登录</string>
+    <string name="login_forgot">忘记密码？点击这里</string>
+    <string name="login_api_ret_1">账号不存在</string>
+    <string name="login_api_ret_2">密码错误</string>
+    <string name="login_empty_params">请输入账号和密码</string>
+    <!--注册 相关-->
+    <string name="register_mobile">手机</string>
+    <string name="register_father">推荐人</string>
+    <string name="register_password">密码</string>
+    <string name="register_password_confirm">确认密码</string>
+    <string name="register_verification">验证码</string>
+    <string name="register_failed">注册失败</string>
+    <string name="register_success">注册成功</string>
+    <string name="password_different">密码不一致</string>
+    <string name="register_free">免费注册</string>
+    <string name="register_card">充值卡注册</string>
+    <string name="no_referrer">没有可为空</string>
+    <string name="no_phone">网络异常或手机号不正确</string>
+    <string name="get_verification">获取验证码</string>
+    <string name="register_btn_confirm">下一步</string>
+    <string name="register_btn_confirm_1">完成</string>
+    <string name="register_btn_confirm_2">确定</string>
+    <!--免费注册 相关-->
+    <string name="register_free_api_ret_1">该号码暂时被限制注册</string>
+    <string name="register_free_api_ret_2">该号码已被注册</string>
+    <string name="register_free_empty_params">请输入您的手机号码用于注册</string>
+    <string name="register_free_other_empty_params">编辑框内容不能为空</string>
+    <string name="register_free_farther_erro">邀请人没有推荐限权</string>
+    <!--充值卡注册 相关-->
+    <string name="register_card_NO">充值卡号</string>
+    <string name="register_card_PWD">充值卡密</string>
+    <string name="register_card_api_ret_0">充值卡注册成功</string>
+    <string name="register_card_api_ret_1">该号充值卡不存在</string>
+    <string name="register_card_api_ret_2">充值卡密码错误</string>
+    <string name="register_card_api_ret_3">该号充值卡已被禁用</string>
+    <string name="register_card_api_ret_4">该号充值卡已被使用</string>
+    <string name="register_card_api_ret_5">该号充值卡不是开户卡</string>
+    <string name="register_card_empty_params">账号、卡号、密码、验证码不能为空</string>
+    <!--验证码 相关-->
+    <string name="verification_title">验证码验证</string>
+    <string name="verification">验证码</string>
+    <string name="verification_verify_again">再次获取</string>
+    <string name="verification_sec">秒</string>
+    <string name="verification_empty">请输入验证码</string>
+    <string name="verification_error">验证码错误</string>
+
+    <!--创建密码 相关-->
+    <string name="create_password">创建密码</string>
+    <string name="create_pwd_title">设置密码</string>
+    <string name="create_pwd_api_ret_0">创建密码并注册成功</string>
+    <string name="create_pwd_api_ret_1">创建密码发生未知错误</string>
+    <string name="create_pwd_api_ret_5">该号码已被注册</string>
+    <string name="string_create_pwd_empty_params">密码不能设置为空</string>
+    <string name="contact_filter_hint">快速查找</string>
+    <!--Forgot 相关-->
+    <string name="forget_title">找回密码</string>
+    <string name="forget_mobile">手机</string>
+    <string name="forget_api_ret_0">提交成功</string>
+    <string name="forget_api_ret_401">该账户不存在</string>
+    <string name="forget_empty_params">请输入您要找回的账户</string>
+    <string name="redirect_success">请注意接听来电</string>
+    <!--home_fragment 相关-->
+    <string name="home_opt_01">找一找</string>
+    <string name="home_opt_02">免费抽奖</string>
+    <string name="home_opt_03">在线商城</string>
+    <string name="home_opt_04">更多应用</string>
+    <string name="home_opt_05">服务热线</string>
+    <string name="home_opt_06">充值</string>
+    <string name="home_opt_07">余额查询</string>
+    <string name="home_opt_08">更多设置</string>
+    <!--余额查询 相关-->
+    <string name="balance_title">余额查询</string>
+    <string name="balance_info">账户详情</string>
+    <string name="balance_money">账户余额</string>
+    <string name="balance_time">剩余时长</string>
+    <string name="balance_expiry">有效日期</string>
+    <string name="balance_unit">元</string>
+    <string name="balance_unit_1">分钟</string>
+    <string name="input_phonenum_spell">输入号码或者拼音</string>
+    <string name="phone">电话</string>
+    <string name="commodity_search">输入商品名称搜索</string>
+    <string name="wode">个人中心</string>
+    <string name="setting">设置</string>
+    <string name="money_balance">余额</string>
+    <string name="commission">佣金</string>
+    <string name="discont">优惠券</string>
+    <string name="distribution_center">分销中心</string>
+    <string name="my_incom">我的收益</string>
+    <string name="my_team">我的团队</string>
+    <string name="generalize">我要推广</string>
+    <string name="withdraw">我要提现</string>
+    <string name="more">更多</string>
+    <string name="prepaid">话费充值</string>
+    <string name="phone_bill">话费查询</string>
+    <string name="feed_back">问题反馈</string>
+    <string name="share">一键分享</string>
+    <string name="sys_setting">系统设置</string>
+    <string name="help_text">帮助说明</string>
+    <string name="version_update">软件升级</string>
+    <string name="about_us">关于我们</string>
+    <string name="net_erro">网络错误</string>
+    <string name="father_register_mobile">请输入推荐人电话</string>
+    <string name="air_pwd">代理注册秘钥</string>
+    <string name="auth_code">短信验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="login_account_tip">账号/手机号</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="input_new_pwd">请输入新密码</string>
+    <string name="forgot_pwd">忘记密码？</string>
+    <string name="user_register">新用户注册</string>
+    <string name="register">注册</string>
+    <string name="input_mobile">请输入手机号</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="input_pwd_tip">请设置密码，6-12位数字、英文、符号</string>
+    <string name="uboyt_pwd_again_tip">请再次输入密码</string>
+    <string name="confirm_register">确认注册</string>
+    <string name="input_register_mobile">请输入您注册时手机号</string>
+    <string name="input_reset_pwd">请输入您的重置密码</string>
+    <string name="input_reset_pwd_again">请再次输入您的重置密码</string>
+    <string name="input_register_card_NO">请输入充值卡号</string>
+    <string name="input_register_card_PWD">请输入充值卡密码</string>
+    <string name="agree_protocal">请选择同意使用协议</string>
+
+    <string name="webview_error_hint">网络请求失败，点击刷新重新加载界面</string>
+    <string name="webview_error_refresh">刷新</string>
+    <string name="pay_hint">订单支付中...</string>
+    <string name="quite_login">退出登录</string>
+    <string name="contact_update">上传通讯录</string>
+    <string name="order">订单</string>
+    <string name="zonghe">综合</string>
+    <string name="xiaoliang">销量</string>
+    <string name="xinpin">新品</string>
+    <string name="string_sousuo">搜索</string>
+
+    <string name="tencent_video">腾讯视频</string>
+    <string name="iqiyi_video">爱奇艺</string>
+    <string name="youku_video">优酷视频</string>
+    <string name="pptv_video">PPTV</string>
+
+    <string name="cancel">取消</string>
+    <string name="sure">确认</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

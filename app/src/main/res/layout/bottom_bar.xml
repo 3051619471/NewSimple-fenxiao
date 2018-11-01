@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/shape_bottom"
+    android:orientation="horizontal"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/tab_call"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tab_call_iv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:src="@drawable/gear_shop_normal" />
+
+        <TextView
+            android:id="@+id/tab_call_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal"
+            android:text="档位商品"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_contacts"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/tab_contacts_iv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:src="@drawable/tab_setting_selector" />
+
+        <TextView
+            android:id="@+id/tab_contacts_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/bottombar02"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_shopping_mall"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tab_shop_iv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:src="@drawable/tab_shop_selector" />
+
+        <TextView
+            android:id="@+id/tab_shop_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/bottombar04"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab_vipvideo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tab_vipvideo_iv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:src="@drawable/tab_vipvideo_selector" />
+
+        <TextView
+            android:id="@+id/tab_vipvideo_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal"
+            android:text="视频"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab_setting"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tab_setting_iv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:src="@drawable/tab_contacts_selector" />
+
+        <TextView
+            android:id="@+id/tab_setting_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/wode"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

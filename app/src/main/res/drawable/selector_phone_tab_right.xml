@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/selector_phone_top_tab_press_right"></item>
+    <item android:state_selected="false" android:drawable="@drawable/selector_phone_top_tab_normal_right"/>
+    <item android:drawable="@drawable/selector_phone_top_tab_normal_right"/>
+</selector>

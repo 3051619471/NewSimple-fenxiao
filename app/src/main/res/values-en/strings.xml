@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--app相关-->
+    <string name="app_name">way</string>
+    <!--网络-->
+    <string name="string_network_error">Network is not available, try to check your settings</string>
+    <string name="xml_error">XML ERROR</string>
+    <string name="net_loading">loading...</string>
+    <string name="error_url">No Service</string>
+    <!--bottombar底部导航栏-->
+    <string name="bottombar01">Phone</string>
+    <string name="bottombar01_close">Close</string>
+    <string name="bottombar01_open">Open</string>
+    <string name="bottombar02">Contacts</string>
+    <string name="bottombar03">More</string>
+    <!--title-->
+    <string name="title_calls">Calls log</string>
+    <string name="title_contacts">Contacts</string>
+    <!--calls_title_menu菜单-->
+    <string name="calls_title_menu_all">All</string>
+    <string name="calls_title_menu_missed">Missed</string>
+    <string name="calls_title_menu_incoming">Incoming</string>
+    <string name="calls_title_menu_outgoing">OutGoing</string>
+    <string name="calls_title_menu_unknown">Unknown</string>
+    <string name="calls_title_menu_delete">Delete</string>
+    <!--contacts_menu菜单-->
+    <string name="contacts_menu_add">save</string>
+    <string name="contacts_menu_call">call</string>
+    <string name="contacts_menu_message">message</string>
+    <string name="contacts_menu_delete">delete</string>
+    <string name="contacts_menu_edit">edit</string>
+    <string name="contacts_menu_collect">collect</string>
+    <string name="contacts_menu_copy">copy</string>
+    <!-- 时间戳转换 -->
+    <string name="time_util_now">Now</string>
+    <string name="time_util_minutes_ago">mins ago</string>
+    <string name="time_util_hours">hour</string>
+    <string name="time_util_minutes">min</string>
+    <string name="time_util_seconds">sec</string>
+    <string name="time_util_min">min</string>
+    <string name="time_util_sec">sec</string>
+    <!--contacts详情-->
+    <string name="contacts_details_calls">calls log</string>
+    <string name="contacts_details_info">contacts details</string>
+    <string name="contacts_details_callrecorder">call recorder</string>
+    <string name="contacts_details_message">message</string>
+    <string name="contacts_details_share">share</string>
+    <string name="unknow_phone_address">unknow</string>
+    <string name="contacts_calls_no_data">no data</string>
+    <string name="contacts_recording_empty">recording is empty</string>
+    <!--dialog提示语-->
+    <string name="TIPS">TIPS</string>
+    <string name="tips_whether_delete">Are you sure you want to delete？</string>
+    <string name="tips_whether_delete_all">Are you sure you want to delete？</string>
+    <string name="tips_confirm">Yes</string>
+    <string name="tips_cancle">No</string>
+    <!--directback回拨界面-->
+    <string name="call_direct_btn_mute">mute</string>
+    <string name="call_direct_btn_handsfree">handsfree</string>
+    <string name="call_direct_btn_hold">hold</string>
+    <string name="call_direct_btn_recording">recording</string>
+    <string name="call_direct_btn_callback">callback</string>
+    <string name="call_direct_btn_hangup">hang up</string>
+    <string name="call_direct_btn_keyboard">keyboard</string>
+    <string name="call_direct_state_calling">calling..</string>
+    <string name="call_direct_state_end">end</string>
+    <!--callback回拨界面-->
+    <string name="call_back_api_ret_0">Successful operation, caution to answer the call</string>
+    <string name="call_back_api_ret_1">Fail operation,check your settings</string>
+    <string name="call_back_api_ret_5">Hasbeen submit a call,please wait and try again</string>
+    <!--设置界面-->
+    <string name="setting_title">Settings</string>
+    <string name="setting_txt_01">Method</string>
+    <string name="setting_txt_02">Voice</string>
+    <string name="setting_txt_03">Dial Tip</string>
+    <!--<string name="setting_txt_02">FSK</string>-->
+    <!--<string name="setting_txt_03">Fixed</string>-->
+    <!--<string name="setting_txt_05">Password</string>-->
+    <!--<string name="setting_txt_06">No NetWork Calling</string>-->
+    <string name="myself_account">Account：</string>
+    <string name="setting_exit">exit</string>
+    <!--设置详情界面-->
+    <string name="setting01_direct">direct call</string>
+    <string name="setting01_back">back call</string>
+    <string name="setting02_AJSY">拨打按键音</string>
+    <string name="setting02_YYTX">语音提醒</string>
+    <string name="setting03_BHTS">拨打提示</string>
+
+    <!--Login 相关-->
+    <string name="login_account">Mobile</string>
+    <string name="login_password">Password</string>
+    <string name="login_register">Register</string>
+    <string name="login_sign_in">Login</string>
+    <string name="login_forgot">Forgot Password?Click here</string>
+    <string name="login_api_ret_1">The number is not exist</string>
+    <string name="login_api_ret_2">The password is wrong</string>
+    <string name="login_empty_params">Pelease input Acct &amp; Pwd</string>
+    <string name="register_btn_confirm">Next</string>
+    <string name="register_btn_confirm_1">Complete</string>
+    <string name="register_btn_confirm_2">Ensure</string>
+    <!--注册 相关-->
+    <string name="register_mobile">Mobile</string>
+    <string name="register_password">Password</string>
+    <string name="register_password_confirm">Password Confirm</string>
+    <string name="register_father">Referrer</string>
+    <string name="register_verification">Verify</string>
+    <string name="register_failed">Register failed</string>
+    <string name="register_success">Register success</string>
+    <string name="password_different">Password different</string>
+    <string name="register_free">FreeRegister</string>
+    <string name="register_card">CardRegister</string>
+    <string name="no_referrer">Nullable</string>
+    <string name="no_phone">No Network Connection</string>
+    <string name="get_verification">Get Verify</string>
+
+    <!--充值卡注册 相关-->
+    <string name="register_card_NO">Card NO</string>
+    <string name="register_card_PWD">Card Password</string>
+    <string name="register_card_api_ret_0">Success</string>
+    <string name="register_card_api_ret_1">The card NO is not exist</string>
+    <string name="register_card_api_ret_2">The password is wrong</string>
+    <string name="register_card_api_ret_3">The card is not avaliable</string>
+    <string name="register_card_api_ret_4">The card has been used</string>
+    <string name="register_card_api_ret_5">The type is not "open account" card</string>
+    <string name="register_card_empty_params">Please enter Acct,Card N.O.,Password</string>
+
+    <!--免费注册 相关-->
+    <string name="register_free_api_ret_1">The number has been restricted</string>
+    <string name="register_free_api_ret_2">The number has been registered</string>
+    <string name="register_free_empty_params">Please enter your mobile number</string>
+    <string name="register_free_other_empty_params">EditText must be not empty</string>
+    <string name="register_free_farther_erro">Inviter not recommended limit</string>
+    <!--验证码 相关-->
+    <string name="verification_title">Verification</string>
+    <string name="verification">Verification</string>
+    <string name="verification_verify_again">Reacquire</string>
+    <string name="verification_sec">sec</string>
+    <string name="verification_empty">Please enter the varification</string>
+    <string name="verification_error">Verification is wrong</string>
+
+    <!--创建密码 相关-->
+    <string name="create_password">Create Password</string>
+    <string name="create_pwd_title">Create Password</string>
+    <string name="create_pwd_api_ret_0">Success</string>
+    <string name="create_pwd_api_ret_1">Unknow Error</string>
+    <string name="create_pwd_api_ret_5">The number has been registered</string>
+    <string name="string_create_pwd_empty_params">Must create a not empty password</string>
+    <string name="contact_filter_hint">Quick Search</string>
+    <!--Forgot 相关-->
+    <string name="forget_title">Find Password</string>
+    <string name="forget_mobile">Mobile</string>
+    <string name="forget_api_ret_0">Success</string>
+    <string name="forget_api_ret_401">The number not exist</string>
+    <string name="forget_empty_params">Enter your number</string>
+    <string name="redirect_success">Please note that an incoming call</string>
+    <!--home_fragment 相关-->
+    <string name="home_opt_01">找一找</string>
+    <string name="home_opt_02">免费抽奖</string>
+    <string name="home_opt_03">在线商城</string>
+    <string name="home_opt_04">更多应用</string>
+    <string name="home_opt_05">服务热线</string>
+    <string name="home_opt_06">Air-Charge</string>
+    <string name="home_opt_07">Balance</string>
+    <string name="home_opt_08">More</string>
+
+    <!--余额查询 相关-->
+    <string name="balance_title">Remain</string>
+    <string name="balance_info">Acct Detail</string>
+    <string name="balance_money">Acct Balance</string>
+    <string name="balance_time">Remain</string>
+    <string name="balance_expiry">Expiration</string>
+    <string name="balance_unit">RMB</string>
+    <string name="balance_unit_1">min</string>
+</resources>

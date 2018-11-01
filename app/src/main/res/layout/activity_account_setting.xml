@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/account_setting_top"
+        layout="@layout/title_new_base"
+        />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:scrollbars="none"
+        android:background="@color/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/theme_white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+
+                    android:id="@+id/rl_phone_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/ripple_one_item_bg"
+                    android:clickable="true"
+                    >
+
+
+                    <TextView
+                        android:text="拨打方式"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/theme_black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/im_sound_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_more"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/layout_margin"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_open_sound_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/im_sound_tip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/line_height"
+                        android:background="@color/line_gray"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_sound_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/ripple_one_item_bg"
+                    android:clickable="true"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="声音提示"
+                        android:textColor="@color/theme_black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_more"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/layout_margin"
+
+                        />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/line_height"
+                        android:background="@color/line_gray"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_modify_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/ripple_one_item_bg"
+                    android:clickable="true"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="修改密码"
+                        android:textColor="@color/theme_black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        />
+
+                    <ImageView
+                        android:id="@+id/im_act_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_more"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/layout_margin"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_open_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/im_act_pwd"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/line_height"
+                        android:background="@color/line_gray"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_update_software"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/ripple_one_item_bg"
+                    android:clickable="true"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="软件升级"
+                        android:textColor="@color/theme_black"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_up_contats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_more"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/layout_margin"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/iv_up_contats"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/line_height"
+                        android:background="@color/line_gray"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/layout_margin"
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_quite_login"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/icon_btn_login_bg"
+                android:gravity="center_horizontal|top"
+                android:paddingTop="21dp"
+                android:text="@string/quite_login"
+                android:textColor="@color/theme_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
