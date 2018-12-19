@@ -1,29 +1,23 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'kotlin-android'
 android {
     lintOptions {
         checkReleaseBuilds false
         abortOnError false
     }
-    dexOptions {
+    /* dexOptions {
         incremental true
         javaMaxHeapSize "4g"
-    }
+    }*/
     signingConfigs {
         release {
-           /* keyAlias 'pomelorange'
-            keyPassword 'lpn1992931'
-            storeFile file('G:/ZIPDomel/astSmathome/key.store')
-            storePassword 'lpn1992931'*/
+            keyAlias 'naoxuanfeng'
+            keyPassword 'dy1101n'
+            storeFile file('dayunao.jks')
+            storePassword 'dy1101n'
         }
-       /* debug {
-            keyAlias 'pomelorange'
-            keyPassword 'lpn1992931'
-            storeFile file('G:/ZIPDomel/astSmathome/key.store')
-            storePassword 'lpn1992931'
-        }*/
     }
-    compileSdkVersion 26
+    compileSdkVersion 27
 //
 //    //指定ABI版本的APK，生成不同ABI版本的APK可以在build.gradle中如下配置：
 //    splits {
@@ -35,53 +29,64 @@ android {
 //        }
 //    }
     defaultConfig {
-        applicationId "com.astgo.fenxiao"
+        applicationId "com.astgo.naoxuanfeng"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1.2"
+        vectorDrawables.useSupportLibrary = true
+        packagingOptions {
+            doNotStrip '*/mips/*.so'
+            doNotStrip '*/mips64/*.so'
+        }
         multiDexEnabled true
+        buildConfigField "long", "BUILD_TIMESTAMP", System.currentTimeMillis() + "L"
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
 //        ndk {
 //            moduleName "native"
 //            //选择要添加的对应cpu类型的.so库。
 //            abiFilters 'armeabi'//,'armeabi-v7a'
 //            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
 //        }
-
-
+        signingConfig signingConfigs.release
     }
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro '
             signingConfig signingConfigs.release
+            multiDexEnabled true
         }
         debug {
             minifyEnabled false
-            signingConfig signingConfigs.debug
-
+            signingConfig signingConfigs.release
         }
     }
+    productFlavors {
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
-
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26+'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //compile files('libs/*.jar')
+    implementation 'com.android.support:appcompat-v7:27+'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-   /* implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.android.support:support-v4:25.3.1'
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })*/
-   // compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:recyclerview-v7:26+'
-    compile 'com.android.support:design:26+'
-   //                testCompile 'junit:junit:4.12'
+    /* implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+                                                                            implementation 'com.android.support:support-v4:25.3.1'
+                                                                            compile fileTree(include: ['*.jar'], dir: 'libs')
+                                                                            androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+                                                                                exclude group: 'com.android.support', module: 'support-annotations'
+                                                                            })*/
+    // compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:27+'
+    //                testCompile 'junit:junit:4.12'
     compile files('libs/pinyin4j-2.5.0.jar')
     compile files('libs/volley.jar')
     compile files('libs/greendao-2.0.0.jar')
@@ -92,47 +97,104 @@ dependencies {
     compile 'com.youth.banner:banner:1.4.10'
     compile 'io.reactivex:rxandroid:1.2.0'
     // 网络请求
-    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.google.code.gson:gson:2.8.1'
     compile('com.squareup.retrofit2:retrofit:2.1.0') {
-        exclude module: 'com.squareup.okhttp3:okhttp:3.4.2'
-        exclude module: 'com.squareup.okio:okio:1.9.0'
+        //  exclude module: 'com.squareup.okhttp3:okhttp:3.4.2'
+        //exclude module: 'com.squareup.okio:okio:1.9.0'
     }
     compile 'com.squareup.okhttp3:okhttp:3.4.2'
+    //compile 'com.squareup.okhttp3:okhttp:3.5.0'
     compile 'com.squareup.okio:okio:1.11.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     //util
-    compile 'com.blankj:utilcode:1.3.6'
-
-    compile 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.blankj:utilcode:1.3.6'
+    implementation 'org.greenrobot:eventbus:3.0.0'
     //butterKnife
     compile 'com.jakewharton:butterknife:8.4.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     //wechat 支付
-    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
     //refresh layout
-    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-alpha-8'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-alpha-8'
     //image selector
-    compile 'com.commit451:PhotoView:1.2.4'
-    compile 'com.isseiaoki:simplecropview:1.0.13'
-    compile 'com.yongchun:com.yongchun.imageselector:1.1.0'
+    implementation 'com.commit451:PhotoView:1.2.4'
+    implementation 'com.isseiaoki:simplecropview:1.0.13'
+    implementation 'com.yongchun:com.yongchun.imageselector:1.1.0'
     //分享
     compile files('libs/MobCommons-2017.1024.1907.jar')
     compile files('libs/MobTools-2017.1024.1907.jar')
     compile files('libs/ShareSDK-Core-3.1.1.jar')
     compile files('libs/ShareSDK-Wechat-3.1.1.jar')
     compile files('libs/ShareSDK-Wechat-Core-3.1.1.jar')
-    compile files('libs/ShareSDK-Wechat-Moments-3.1.1.jar')
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
-    compile 'com.lzy.net:okhttputils:1.8.1'
+    implementation files('libs/ShareSDK-Wechat-Moments-3.1.1.jar')
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    implementation 'com.lzy.net:okhttputils:1.8.1'
     implementation files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
-
-    compile 'com.android.support:multidex:1.0.0'
-    compile 'com.liulishuo.filedownloader:library:1.7.2'
+    //implementation 'com.liulishuo.filedownloader:library:1.7.2'
     implementation files('libs/alipaySdk-20180403.jar')
     implementation files('libs/commons-lang3-3.1.jar')
     implementation files('libs/zxing-core-3.3.0.jar')
     implementation files('libs/jcore-android-1.2.1.jar')
     implementation files('libs/com.baidu.tts_2.3.2.20180419_5a5fec8.jar')
+    //视频播放jiecao依赖
+    implementation 'fm.jiecao:jiecaovideoplayer:5.5.4'
+    //图片fresco
+    implementation 'com.facebook.fresco:fresco:0.14.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'org.xutils:xutils:3.5.0'
+    //视频播放器
+    //implementation 'com.shuyu:GSYVideoPlayer:6.0.1'
+    //xrecyclerview的依赖上下拉刷新
+    compile 'com.android.support:recyclerview-v7:27+'
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+    implementation 'com.github.maning0303:MNVideoPlayer:V1+'
+    implementation 'com.github.Andy-13:ZbPermission:1.0.0'
+    implementation 'com.yanzhenjie:permission:1.0.7'
+    implementation 'com.liulishuo.filedownloader:library:1.7.5'
+    implementation project(':jiaozivideoplayer')
+    implementation 'com.danikula:videocache:2.7.0'
+    //implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.1'
+    implementation 'com.android.support:multidex:1.0.1'
+    // implementation 'com.zzhoujay.richtext:richtext:2.0.7'
+    implementation 'com.zzhoujay.richtext:richtext:3.0.7'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    compile 'com.gcssloop.widget:rclayout:1.4.1@aar'
+    compile 'me.spark:submitbutton:1.0.1'
+    compile 'com.github.pinguo-zhouwei:CustomPopwindow:2+'
+
+//跑马灯
+    compile 'com.sunfusheng:marqueeview:1.3.3'
+    //小视频之后
+    compile 'com.github.ceryle:RadioRealButton:v2.1.1'
+    /*第三方库*/
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //七牛
+    compile 'com.qiniu:qiniu-android-sdk:7.3.11'
+    compile files('libs/pldroid-shortvideo-1.15.0.jar')
+    compile files('libs/pldroid-player-2.1.5.jar')
+    compile files('libs/EasyAR.jar')
+    compile files('libs/EasyAR3D.jar')
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+    compile 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.10.6'
+//    implementation 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
+  //implementation 'com.google.zxing:core:3.2.0'
+    implementation 'com.bugsnag:bugsnag-android-ndk:1.1.2'
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name
+                    .startsWith("multidex")) {
+                details.useVersion '27.1.1'
+            }
+        }
+    }
 }

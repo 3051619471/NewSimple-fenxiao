@@ -5,7 +5,7 @@
     android:background="@color/theme_white_dark"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.leef.astgo.app.LoginActivity">
+    tools:context="com.astgo.naoxuanfeng.activity.LoginActivity">
 
     <ImageView
         android:layout_width="100dp"

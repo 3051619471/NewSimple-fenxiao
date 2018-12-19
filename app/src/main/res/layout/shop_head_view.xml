@@ -39,7 +39,7 @@
         android:layout_height="wrap_content">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/shop_category"
+            android:id="@+id/shop_category_recycle"
             android:background="@color/theme_white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

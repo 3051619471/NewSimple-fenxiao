@@ -72,7 +72,7 @@
 
                     </LinearLayout>
 
-                    <com.astgo.fenxiao.widget.RingWaterView
+                    <com.astgo.naoxuanfeng.widget.RingWaterView
                         android:id="@+id/ringWaterView"
                         android:visibility="gone"
                         android:layout_width="match_parent"

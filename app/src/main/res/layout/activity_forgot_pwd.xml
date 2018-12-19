@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F2F5F7"
-    tools:context="com.astgo.fenxiao.activity.ForgotPwdActivity">
+    tools:context="com.astgo.naoxuanfeng.activity.ForgotPwdActivity">
 
     <include
         layout="@layout/title_base"

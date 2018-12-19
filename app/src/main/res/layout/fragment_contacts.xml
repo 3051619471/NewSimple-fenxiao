@@ -28,7 +28,7 @@
             android:textSize="30sp"
             android:visibility="invisible" />
 
-        <com.astgo.fenxiao.widget.Sidebar
+        <com.astgo.naoxuanfeng.widget.Sidebar
             android:id="@+id/sidebar"
             android:layout_width="20dp"
             android:layout_height="match_parent"

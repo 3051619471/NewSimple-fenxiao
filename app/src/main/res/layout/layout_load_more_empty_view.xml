@@ -2,7 +2,7 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/dp_40">
+    android:layout_height="40dp">
 
 
         <TextView
@@ -10,7 +10,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/load_failed"/>
+            android:text="加载失败，请点我重试"/>
 
 
 </FrameLayout>

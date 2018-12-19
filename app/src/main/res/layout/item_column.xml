@@ -3,53 +3,59 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="5dp">
 
     <ImageView
         android:id="@+id/iv_title"
-        android:layout_width="60dp"
-        android:layout_height="15dp" />
+        android:layout_width="95dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center"/>
 
-    <TextView
+    <!--<TextView
         android:id="@+id/tv_des"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:gravity="center|left"
         android:singleLine="true"
         android:text="特卖特卖特卖特卖"
-        android:textSize="12dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
+        android:textSize="12dp" />-->
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:id="@+id/img_des"
+        android:layout_gravity="center"
+        />
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
 
-        <com.astgo.fenxiao.widget.ImageViewWH1b1
-            android:id="@+id/iv_pic1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
-
-
-
-            />
-
-        <com.astgo.fenxiao.widget.ImageViewWH1b1
-            android:id="@+id/iv_pic2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="2dp"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
+         <com.astgo.fenxiao.widget.ImageViewWH1b1
+             android:id="@+id/iv_pic1"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_weight="1"
+             android:scaleType="fitXY"
 
 
 
+             />
 
-            />
-    </LinearLayout>
+         <com.astgo.fenxiao.widget.ImageViewWH1b1
+             android:id="@+id/iv_pic2"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginLeft="2dp"
+             android:layout_weight="1"
+             android:scaleType="fitXY"
 
+
+
+
+             />
+     </LinearLayout>
+ -->
 
 </LinearLayout>

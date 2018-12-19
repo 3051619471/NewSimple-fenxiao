@@ -15,3 +15,50 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-keepattributes Signature #范型
+#native方法不混淆
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+#v4包不混淆
+-keep class android.support.v4.app.** { *; }
+-keep interface android.support.v4.app.** { *; }
+#Gson混淆配置
+-keep class sun.misc.Unsafe { *; }
+-keep class com.idea.fifaalarmclock.entity.***
+-keep class com.google.gson.** { *; }
+#JavaBean
+-keepclassmembers public class cn.net.duqian.bean.** {
+   void set*(***);
+   *** get*();
+}
+-keep class com.xx.duqian_cloud.JavaScriptInterface { *; }#webview js
+#忽略 libiary 混淆
+-keep class io.vov.vitamio.** { *; }
+#butterknife不混淆
+-keep class butterknife.** { *; }
+-dontwarn butterknife.internal.**
+-keep class **$$ViewBinder { *; }
+-keepclasseswithmembernames class * {
+    @butterknife.* <fields>;
+}
+-keepclasseswithmembernames class * {
+    @butterknife.* <methods>;
+}
+-keepclassmembers class * {
+   public <init> (org.json.JSONObject);
+}
+#okhttp
+-dontwarn okhttp3.**
+-keep class okhttp3.**{*;}
+-keep interface okhttp3.**{*;}
+#okio
+-dontwarn okio.**
+-keep class okio.**{*;}
+-keep interface okio.**{*;}
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes Exceptions
+-dontwarn rx.**
+-keep class rx.**{*;}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8ed9ea"
+    >
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="4"
+    android:id="@+id/recycle_enroll"></android.support.v7.widget.RecyclerView>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+           <!-- <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会议一次最多可以选择一个"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:textSize="24dp"
+                />
+-->
+           <!-- <EditText
+                android:id="@+id/mentting"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:textColor="#7C8790"
+                android:paddingBottom="20dp"
+                android:hint="会议选择"
+                android:background="@drawable/et_bottom_line_bg"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/tv1"/>-->
+        </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="姓名："
+              android:id="@+id/tv2"
+              android:textColor="#000"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="15dp"/>
+          />
+          <EditText
+              android:id="@+id/edit_name"
+              android:layout_width="300dp"
+              android:layout_height="45dp"
+              android:textColor="#7C8790"
+              android:paddingBottom="20dp"
+              android:hint="请输入姓名"
+              android:background="@drawable/et_bottom_line_bg"
+              android:maxLines="1"
+              android:layout_marginTop="5dp"
+              android:layout_marginLeft="25dp"
+              android:layout_toRightOf="@id/tv2"/>
+      </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv3"
+                android:text="电话："
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:textColor="#7C8790"
+                android:paddingBottom="20dp"
+                android:hint="请输入手机号"
+                android:background="@drawable/et_bottom_line_bg"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/tv3"/>
+        </RelativeLayout>
+     <Button
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:text="提交"
+         android:id="@+id/submit"/>
+</LinearLayout>
+
+
+</LinearLayout>

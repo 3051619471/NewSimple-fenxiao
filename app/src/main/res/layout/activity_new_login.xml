@@ -3,7 +3,10 @@
     android:background="@color/theme_white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/login_20181110104403" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,39 +16,65 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
+
         <ImageView
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logins_20181110145012" />
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/logo_icon" />
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp">
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_marginLeft="8dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/login_20181110144957" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/login_20181110144927"
+                android:id="@+id/img2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/img1"/>
 
-        <EditText
-            android:id="@+id/et_account"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:textColor="#7C8790"
-            android:layout_marginTop="70dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:paddingBottom="20dp"
-            android:hint="@string/login_account_tip"
-            android:background="@drawable/et_bottom_line_bg"
-            android:inputType="phone"
-            android:maxLines="1" />
 
-        <EditText
-            android:id="@+id/et_password"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:textColor="#7C8790"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:paddingBottom="20dp"
-            android:hint="@string/input_pwd"
-            android:background="@drawable/et_bottom_line_bg"
-            android:inputType="textPassword"
-            android:maxLines="1"  />
+          <EditText
+              android:id="@+id/et_account"
+              android:layout_width="300dp"
+              android:layout_height="45dp"
+              android:textColor="#7C8790"
+              android:paddingBottom="20dp"
+              android:hint="@string/login_account_tip"
+              android:background="@drawable/et_bottom_line_bg"
+              android:inputType="phone"
+              android:maxLines="1"
+              android:layout_marginTop="5dp"
+              android:layout_marginLeft="25dp"
+              android:layout_toRightOf="@id/img1"/>
+
+          <EditText
+              android:id="@+id/et_password"
+              android:layout_width="300dp"
+              android:layout_height="45dp"
+              android:textColor="#7C8790"
+              android:layout_marginTop="30dp"
+              android:paddingBottom="20dp"
+              android:hint="@string/input_pwd"
+              android:background="@drawable/et_bottom_line_bg"
+              android:inputType="textPassword"
+              android:maxLines="1"
+              android:layout_marginLeft="25dp"
+              android:layout_toRightOf="@id/img2"
+              android:layout_below="@id/et_account"/>
+        </RelativeLayout>
+
 
 
         <RelativeLayout

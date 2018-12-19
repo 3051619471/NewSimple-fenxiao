@@ -74,5 +74,9 @@
     <color name="viewfinder_laser">@color/text_blue</color> <!-- Android standard ICS color -->
     <color name="viewfinder_mask">#60000000</color>
     <color name="red">#FE4445</color>
-
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#ff8340</color>
+    <color name="colorAccent">#ff8340</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="colorWrite">#ffffff</color>
 </resources>

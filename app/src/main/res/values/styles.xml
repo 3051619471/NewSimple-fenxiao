@@ -76,7 +76,8 @@
     <style name="Splash" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:windowBackground">@drawable/launcher_bg</item>
+        <item name="android:windowBackground">@drawable/welcome_01</item>
+
         <item name="android:windowFullscreen">true</item>
 
     </style>

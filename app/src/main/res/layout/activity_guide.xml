@@ -20,7 +20,7 @@
         android:orientation="horizontal" >
 
     </LinearLayout>
-    <TextView
+  <!--  <TextView
         android:id="@+id/guideTv"
         android:layout_width="130dp"
         android:layout_height="40dp"
@@ -33,6 +33,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="34dp"
         android:visibility="gone"
-        />
-
+        />-->
+<Button
+    android:id="@+id/guideTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_above="@id/llPoint"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="34dp"
+    android:visibility="gone"
+    android:background="@drawable/button_20181108"/>
 </RelativeLayout>
